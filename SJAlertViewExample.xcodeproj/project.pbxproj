@@ -14,6 +14,7 @@
 		1FDF61B31AB1849700F6C02C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDF61B21AB1849700F6C02C /* Images.xcassets */; };
 		1FDF61B61AB1849700F6C02C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FDF61B41AB1849700F6C02C /* LaunchScreen.xib */; };
 		1FDF61C21AB1849700F6C02C /* SJAlertViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF61C11AB1849700F6C02C /* SJAlertViewExampleTests.m */; };
+		1FDF61CD1AB184D700F6C02C /* SJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF61CC1AB184D700F6C02C /* SJAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1FDF61BB1AB1849700F6C02C /* SJAlertViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJAlertViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDF61C01AB1849700F6C02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FDF61C11AB1849700F6C02C /* SJAlertViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJAlertViewExampleTests.m; sourceTree = "<group>"; };
+		1FDF61CB1AB184D700F6C02C /* SJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAlertView.h; sourceTree = "<group>"; };
+		1FDF61CC1AB184D700F6C02C /* SJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA8BB351AB2A01B00C43A6D /* SJAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				1FDF61CB1AB184D700F6C02C /* SJAlertView.h */,
+				1FDF61CC1AB184D700F6C02C /* SJAlertView.m */,
+			);
+			name = SJAlertView;
+			sourceTree = "<group>";
+		};
 		1FDF61991AB1849700F6C02C = {
 			isa = PBXGroup;
 			children = (
+				1FA8BB351AB2A01B00C43A6D /* SJAlertView */,
 				1FDF61A41AB1849700F6C02C /* SJAlertViewExample */,
 				1FDF61BE1AB1849700F6C02C /* SJAlertViewExampleTests */,
 				1FDF61A31AB1849700F6C02C /* Products */,
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDF61CD1AB184D700F6C02C /* SJAlertView.m in Sources */,
 				1FDF61AE1AB1849700F6C02C /* ViewController.m in Sources */,
 				1FDF61AB1AB1849700F6C02C /* AppDelegate.m in Sources */,
 				1FDF61A81AB1849700F6C02C /* main.m in Sources */,
@@ -412,6 +426,7 @@
 				1FDF61C71AB1849700F6C02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FDF61C81AB1849700F6C02C /* Build configuration list for PBXNativeTarget "SJAlertViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				1FDF61CA1AB1849700F6C02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

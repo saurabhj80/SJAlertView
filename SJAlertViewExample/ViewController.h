@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SJAlertView.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) SJAlertView* alert;
 
 @end
 
