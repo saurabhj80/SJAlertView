@@ -16,6 +16,7 @@
 @optional
 - (void)alertWillShow;
 - (void)alertWillDisAppear;
+- (void)alertDidDisAppear;
 
 @end
 

@@ -134,6 +134,10 @@
         
         [UIView animateWithDuration:0.3 animations:^{
             self.alpha = 0;
+        } completion:^(BOOL finished) {
+            if ([self.delegate respondsToSelector:@selector(alertDidDisAppear)]) {
+                [self.delegate alertDidDisAppear];
+            }
         }];
     }
     
@@ -160,6 +164,10 @@
                 [self.animator removeAllBehaviors];
                 self.alpha = NO;
                 self.frame = self.frame1;
+                
+                if ([self.delegate respondsToSelector:@selector(alertDidDisAppear)]) {
+                    [self.delegate alertDidDisAppear];
+                }
             });
             
         });
